@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.jumbotron-container {
+  background-color: #fff !important;
+}
+
+.icons-footer {
+  width: 15%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+span {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: right;
+  color: #5c5c5c;
+}
