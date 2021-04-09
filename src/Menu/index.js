@@ -20,8 +20,8 @@ const Menu = (props) => {
   return (
     <div>
       <Navbar light expand="md">
-        <NavbarBrand className="logo">
-          <img src={Logo} alt="Logo" />
+        <NavbarBrand>
+          <img src={Logo} alt="Logo" className="logo" />
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
