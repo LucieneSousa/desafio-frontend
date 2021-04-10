@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Figure, FigureImage } from "react-bootstrap";
 import ButtonCard from "./../components/buttonCard";
 import "./home.css";
 
@@ -31,45 +31,52 @@ function Home() {
           <Card.Text className="card-title">How the app works</Card.Text>
         </Card>
       </div>
-      <div>
-        <Card>
-          <Card.Img src={cel3} className="img-cel" />
-        </Card>
-        <Card>
-          <Card.Text className="txt-create">Create an account</Card.Text>
-          <Card.Text className="title-create">
+
+      <div class="card-wrapper">
+        <div class="card-cel">
+          <img src={cel3} className="img-cel" />
+        </div>
+        <div class="card-text">
+          <h3 className="txt-create">Create an account</h3>
+          <h2 className="title-create">
             Create/login to an existing account to get started
-          </Card.Text>
-          <Card.Text className="subtitle-account">
+          </h2>
+          <h4 className="subtitle-account">
             An account is created with your email and a desired password
-          </Card.Text>
-        </Card>
+          </h4>
+        </div>
       </div>
 
-      <div>
-        <Card>
-          <Card.Img src={cel4} className="img-cel" />
-          <Card.Text className="txt-create">Explore varieties</Card.Text>
-          <Card.Text className="title-create">
+      <div class="card-wrapper">
+        <div class="card-text">
+          <h3 className="txt-create">Explore varieties</h3>
+          <h2 className="title-create">
             Shop for your favorites meal as e dey hot.
-          </Card.Text>
-          <Card.Text className="subtitle-account">
+          </h2>
+          <h4 className="subtitle-account">
             Shop for your favorite meals or drinks and enjoy while doing it.
-          </Card.Text>
-        </Card>
+          </h4>
+        </div>
+        <div class="card-cel">
+          <img src={cel4} className="img-cel" />
+        </div>
       </div>
 
-      <div>
-        <Card>
-          <Card.Img src={cel5} className="img-cel" />
-          <Card.Text className="txt-create">Checkout</Card.Text>
-          <Card.Text className="title-create">
+      <div class="card-wrapper">
+        <div class="card-cel">
+          <Figure>
+            <Figure.Image width={278} height={511} src={cel5} />
+          </Figure>
+        </div>
+        <div class="card-text">
+          <h3 className="txt-create">Checkout</h3>
+          <h2 className="title-create">
             When you done check out and get it delivered.
-          </Card.Text>
-          <Card.Text className="subtitle-account">
+          </h2>
+          <h4 className="subtitle-account">
             When you done check out and get it delivered with ease.
-          </Card.Text>
-        </Card>
+          </h4>
+        </div>
       </div>
 
       <div>

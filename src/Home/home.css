@@ -89,7 +89,6 @@
   font-weight: 700;
   line-height: 57px;
   letter-spacing: 0.20000000298023224px;
-  text-align: center;
   color: #252b42;
 }
 
@@ -176,7 +175,6 @@
   font-weight: 700;
   line-height: 36px;
   letter-spacing: 0.10000000149011612px;
-  text-align: center;
   color: #fa4a0c;
 }
 
@@ -190,10 +188,26 @@
 
 .img-cel {
   height: 525px;
-  width: 269px;
+  width: 100%;
   left: 939px;
   top: 78px;
   border-radius: 0px;
+}
+
+.card-wrapper {
+  display: flex;
+  align-items: center;
+  flex: 2;
+}
+
+.card-cel {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-text {
+  flex: 1;
 }
 
 @media (max-width: 767px) {
@@ -235,6 +249,7 @@
     display: flex;
     align-items: center;
     flex-flow: column;
+    margin-top: 50px;
   }
 
   .card-button-mb {
