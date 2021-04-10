@@ -1,47 +1,35 @@
-import React, { useState } from "react";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-} from "reactstrap";
-
+import React from "react";
+import { Nav, Navbar } from "react-bootstrap";
 import "./menu.css";
 
 import Logo from "./../assets/logo.svg";
 
 const Menu = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
   return (
     <div>
-      <Navbar light expand="md">
-        <NavbarBrand>
+      <Navbar expand="lg">
+        <Navbar.Brand>
           <img src={Logo} alt="Logo" className="logo" />
-        </NavbarBrand>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto-menu">
-            <NavItem>
-              <NavLink href="#" className="menu-item">
+            <Nav.Item>
+              <Nav.Link href="#" className="menu-item">
                 Home
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink>Product</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink>Faq</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink className="border-contact">Contact</NavLink>
-            </NavItem>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link>Product</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link>Faq</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link className="border-contact">Contact</Nav.Link>
+            </Nav.Item>
           </Nav>
-        </Collapse>
+        </Navbar.Collapse>
       </Navbar>
     </div>
   );
