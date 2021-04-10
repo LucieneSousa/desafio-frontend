@@ -1,5 +1,5 @@
 import React from "react";
-import { Jumbotron, Container } from "reactstrap";
+import { Jumbotron, Container } from "react-bootstrap";
 import facebook from "./../assets/facebook.svg";
 import instagram from "./../assets/instagram.jpg";
 import twitter from "./../assets/twitter.svg";
@@ -10,7 +10,7 @@ const Footer = (props) => {
   return (
     <div>
       <Jumbotron fluid className="jumbotron-container">
-        <Container fluid className="footer">
+        <Container className="footer">
           <div>
             <img src={logo} alt="logo" />
           </div>
