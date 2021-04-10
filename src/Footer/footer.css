@@ -26,3 +26,34 @@ span {
   text-align: right;
   color: #5c5c5c;
 }
+
+.footer-web {
+  display: flex;
+}
+
+.footer-mob {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .icons-footer-mb {
+    width: 52%;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footer-web {
+    display: none;
+  }
+
+  .footer-mob {
+    display: flex;
+  }
+}
