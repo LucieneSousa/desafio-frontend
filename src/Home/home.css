@@ -15,13 +15,15 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-app,
 .btn-play,
 .subtitle,
-.text-title,
-.card-wrapper {
+.text-title {
   font-family: "Montserrat", sans-serif;
   color: #f6f6f6;
   font-size: 24px !important;
@@ -40,6 +42,34 @@
   letter-spacing: 0.20000000298023224px;
 }
 
+.btn-appstore,
+.btn-playstore {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fa4a0c;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  cursor: pointer;
+  height: 64px;
+  width: 142px;
+  left: 0px;
+  top: 0px;
+  border-radius: 10px;
+  padding-top: 18px;
+  text-align: center;
+}
+
+.btn-appstore {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  width: 176px;
+}
+
 .title {
   font-family: "Poppins", sans-serif;
   color: #fff;
@@ -49,6 +79,43 @@
   line-height: 80px;
   letter-spacing: 0.20000000298023224px;
   text-align: center;
+}
+
+.subtitle-account,
+.title-create {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #252b42;
+}
+
+.subtitle-account {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+  color: #737373;
+}
+
+.subtitle-create-mb,
+.title-create-mb {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #fff;
+}
+
+.subtitle-create-mb {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
 }
 
 .card-title {
@@ -62,28 +129,44 @@
   color: #000000;
 }
 
+.card-button {
+  display: flex;
+  justify-content: center;
+}
+
+.card-button-mb {
+  display: flex;
+  justify-content: space-evenly;
+  width: 43%;
+}
+
 .btn-play {
-  background-color: #fa4a0c !important;
-  border-color: #fa4a0c !important;
-  border-radius: 30px !important;
-  font-weight: 700 !important;
+  background-color: #fa4a0c;
+  border-color: #fa4a0c;
+  border-radius: 30px;
+  padding-top: 17px;
+  font-weight: 700;
   height: 68px;
   width: 236px;
   margin-right: 35px;
   left: 0px;
   top: 0px;
-  padding: 16px, 0px, 16px, 0px !important;
+  padding: 16px, 0px, 16px, 0px;
+  cursor: pointer;
 }
 
 .btn-app {
-  background-color: transparent !important;
-  border-color: #fff !important;
-  border-radius: 30px !important;
-  font-weight: 700 !important;
+  background-color: transparent;
+  border-color: #fff;
+  border: 1px solid #fff;
+  padding-top: 17px;
+  border-radius: 30px;
+  font-weight: 700;
   height: 68px;
   width: 236px;
   left: 0px;
   top: 0px;
+  cursor: pointer;
 }
 
 .txt-create {
@@ -97,11 +180,32 @@
   color: #fa4a0c;
 }
 
+.session-mob {
+  display: none !important;
+}
+
+.session-web {
+  display: flex;
+}
+
+.img-cel {
+  height: 525px;
+  width: 269px;
+  left: 939px;
+  top: 78px;
+  border-radius: 0px;
+}
+
 @media (max-width: 767px) {
   .fundo {
     background-image: none;
     background-color: #fafafa !important;
     height: auto;
+  }
+
+  .segundo-fundo {
+    background-image: none;
+    background-color: #252b42 !important;
   }
 
   .text-title,
@@ -116,14 +220,53 @@
   }
 
   .btn-app {
-    color: #fa4a0c !important;
-    border-color: #fa4a0c !important;
-    border-radius: 30px !important;
+    color: #fa4a0c;
+    border-color: #fa4a0c;
+    border-radius: 30px;
     font-size: 24px;
     margin-top: 20px;
     margin-right: 30px;
     width: 236px;
     height: 68px;
-    padding: 16px, 0px, 16px, 0px !important;
+    padding: 16px, 0px, 16px, 0px;
+  }
+
+  .card-button {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .card-button-mb {
+    width: 90%;
+  }
+
+  .subtitle-create-mb,
+  .title-create-mb {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .subtitle-create-mb {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: 0.20000000298023224px;
+    text-align: center;
+    color: #bdbdbd;
+  }
+
+  .session-mob {
+    display: flex !important;
+  }
+
+  .session-web {
+    display: none !important;
   }
 }

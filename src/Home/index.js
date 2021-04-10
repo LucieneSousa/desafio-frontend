@@ -1,13 +1,6 @@
 import React from "react";
-import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  Button,
-} from "reactstrap";
+import { Card } from "react-bootstrap";
+import ButtonCard from "./../components/buttonCard";
 import "./home.css";
 
 import cel3 from "./../assets/cel3.svg";
@@ -18,65 +11,94 @@ function Home() {
   return (
     <div>
       <Card className="fundo">
-        <CardBody className="card-wrapper">
-          <CardSubtitle className="text-title">Food app</CardSubtitle>
-          <CardText className="title">Why stay hungry when</CardText>
-          <CardText className="title">you can order form Bella Onojie</CardText>
-          <CardText className="subtitle">
+        <Card.Body>
+          <Card.Text className="text-title">Food app</Card.Text>
+          <Card.Text className="title">Why stay hungry when</Card.Text>
+          <Card.Text className="title">
+            you can order form Bella Onojie
+          </Card.Text>
+          <Card.Text className="subtitle">
             Download the bella onoje’s food app now on
-          </CardText>
-          <Button className="btn-play">Playstore</Button>
-          <Button className="btn-app">App store</Button>
-        </CardBody>
+          </Card.Text>
+          <div className="card-button">
+            <ButtonCard class="btn-play" text="Playstore"></ButtonCard>
+            <ButtonCard class="btn-app" text="App store"></ButtonCard>
+          </div>
+        </Card.Body>
       </Card>
       <div>
         <Card>
-          <CardTitle className="card-title">How the app works</CardTitle>
+          <Card.Text className="card-title">How the app works</Card.Text>
         </Card>
       </div>
       <div>
         <Card>
-          <CardImg src={cel3} width="302px" height="525px" />
-          <CardSubtitle className="txt-create">Create an account</CardSubtitle>
-          <CardText>
+          <Card.Img src={cel3} className="img-cel" />
+        </Card>
+        <Card>
+          <Card.Text className="txt-create">Create an account</Card.Text>
+          <Card.Text className="title-create">
             Create/login to an existing account to get started
-          </CardText>
-          <CardText>
+          </Card.Text>
+          <Card.Text className="subtitle-account">
             An account is created with your email and a desired password
-          </CardText>
+          </Card.Text>
         </Card>
       </div>
 
       <div>
         <Card>
-          <CardImg src={cel4} />
-          <CardSubtitle className="txt-create">Explore varieties</CardSubtitle>
-          <CardText>Shop for your favorites meal as e dey hot.</CardText>
-          <CardText>
+          <Card.Img src={cel4} className="img-cel" />
+          <Card.Text className="txt-create">Explore varieties</Card.Text>
+          <Card.Text className="title-create">
+            Shop for your favorites meal as e dey hot.
+          </Card.Text>
+          <Card.Text className="subtitle-account">
             Shop for your favorite meals or drinks and enjoy while doing it.
-          </CardText>
+          </Card.Text>
         </Card>
       </div>
 
       <div>
         <Card>
-          <CardImg src={cel5} />
-          <CardSubtitle className="txt-create">Checkout</CardSubtitle>
-          <CardText>When you done check out and get it delivered.</CardText>
-          <CardText>
+          <Card.Img src={cel5} className="img-cel" />
+          <Card.Text className="txt-create">Checkout</Card.Text>
+          <Card.Text className="title-create">
+            When you done check out and get it delivered.
+          </Card.Text>
+          <Card.Text className="subtitle-account">
             When you done check out and get it delivered with ease.
-          </CardText>
+          </Card.Text>
         </Card>
       </div>
 
       <div>
-        <Card className="segundo-fundo">
-          <CardText>Download the app now.</CardText>
-          <CardText>
+        <Card className="segundo-fundo session-web">
+          <Card.Text className="title-create-mb">
+            Download the app now.
+          </Card.Text>
+          <Card.Text className="subtitle-create-mb">
             Available on your favorite store. Start your premium experience now
-          </CardText>
-          <Button className="btn-play">Playstore</Button>
-          <Button className="btn-app">App store</Button>
+          </Card.Text>
+          <div className="card-button-mb ">
+            <ButtonCard class="btn-playstore" text="Playstore"></ButtonCard>
+            <ButtonCard class="btn-appstore" text="App store"></ButtonCard>
+          </div>
+        </Card>
+      </div>
+
+      <div>
+        <Card className="segundo-fundo session-mob">
+          <Card.Text className="title-create-mb">
+            Download the app now.
+          </Card.Text>
+          <Card.Text className="subtitle-create-mb">
+            Most calendars are designed for teams.
+          </Card.Text>
+          <div className="card-button-mb ">
+            <ButtonCard class="btn-playstore" text="Buy now"></ButtonCard>
+            <ButtonCard class="btn-appstore" text="App store"></ButtonCard>
+          </div>
         </Card>
       </div>
     </div>
