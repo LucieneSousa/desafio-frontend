@@ -14,8 +14,16 @@ function Home() {
     <div>
       <Card bsPrefix="fundo">
         <Card.Text className="text-title">Food app</Card.Text>
-        <Card.Text className="title">Why stay hungry when</Card.Text>
-        <Card.Text className="title">you can order form Bella Onojie</Card.Text>
+        <Card.Text className="title session-web">
+          Why stay hungry when
+        </Card.Text>
+        <Card.Text className="title session-web">
+          you can order form Bella Onojie
+        </Card.Text>
+        <Card.Text className="title session-mob">
+          Why stay hungry when you can order form Bella Onojie
+        </Card.Text>
+
         <Card.Text className="subtitle">
           Download the bella onoje’s food app now on
         </Card.Text>

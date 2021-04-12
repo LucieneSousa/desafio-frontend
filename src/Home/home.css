@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 .fundo {
@@ -16,7 +16,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 90vh;
+  height: 516px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,7 +38,7 @@
 }
 
 .subtitle {
-  font-weight: 500 !important;
+  font-weight: 500;
   line-height: 38px;
   padding-top: 20px;
   letter-spacing: 0.20000000298023224px;
@@ -206,6 +206,7 @@
 
 .session-web {
   display: flex;
+  justify-content: center;
 }
 
 .figure-img,

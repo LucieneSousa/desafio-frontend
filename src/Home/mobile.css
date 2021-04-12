@@ -26,12 +26,15 @@
   .segundo-fundo {
     background-image: none;
     background-color: #252b42 !important;
+    height: 564px;
   }
 
   .text-title,
   .subtitle {
     color: #737373;
     font-size: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .title {
@@ -86,6 +89,8 @@
     letter-spacing: 0.20000000298023224px;
     text-align: center;
     color: #fff;
+    margin-left: 20px;
+    margin-right: 40px;
   }
 
   .subtitle-create-mb {
