@@ -23,8 +23,10 @@
   border: 1px solid #000;
 }
 
+.navbar-light,
+.navbar-nav,
 .nav-link {
-  color: #252b42;
+  color: #252b42 !important;
 }
 
 .nav-link:hover,
@@ -34,7 +36,7 @@
   color: #fa4a0c !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .logo {
     margin-left: 0px;
     width: 104px;
