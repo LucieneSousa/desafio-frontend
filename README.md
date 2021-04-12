@@ -23,7 +23,7 @@ $ npm start
 # O app vai inicializar em <http://localhost:3000>
 ```
 
-### Links
+## Links
 
 A página está hospedada em: https://bellaonojie.herokuapp.com/
 
