@@ -29,6 +29,10 @@
   color: #252b42 !important;
 }
 
+.menu-item {
+  color: #fa4a0c !important;
+}
+
 .nav-link:hover,
 .menu-item:visited,
 .menu-item:active,
